@@ -19,6 +19,9 @@ operator:
     # periodSeconds: 20
   startupProbe: {}
     # periodSeconds: 3
+  nodeSelector:
+    kubernetes.io/os: linux
+  tolerations: []
 
 sidecar:
   image:
