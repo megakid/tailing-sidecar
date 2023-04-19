@@ -438,3 +438,7 @@ spec:
         secret:
           defaultMode: 420
           secretName: webhook-server-cert
+      nodeSelector:
+        {{- toYaml .Values.operator.nodeSelector | nindent 8 }}
+      tolerations:
+        {{- toYaml .Values.operator.tolerations | nindent 8 }}
